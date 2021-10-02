@@ -1,8 +1,10 @@
-from game_data import data
+from data import data
 import random
 from art import logo, vs
-from replit import clear
+from os import system
 
+def clear():
+    _ = system('clear')
 def get_random_account():
   """Get data from random account"""
   return random.choice(data)
