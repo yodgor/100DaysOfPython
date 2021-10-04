@@ -1,6 +1,7 @@
 import random
 from os import system
 from logo import logo
+
 def clear():
     _ = system('clear')
 def deal_card():
