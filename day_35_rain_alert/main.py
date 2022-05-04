@@ -8,6 +8,7 @@ auth_token = ''
 
 
 weather_params = {
+    #pittsburgh
     "lat": 40.44,
     "lon": -79.99,
     "appid": api_key,
