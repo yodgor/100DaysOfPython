@@ -1,6 +1,7 @@
 import requests
 import os
 from twilio.rest import Client
+#using openweather api
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall?"
 api_key = ""
 account_sid = ''
@@ -27,6 +28,7 @@ for hour_data in weather_slice:
         will_rain=True
 
 if will_rain:
+    #using twilio api
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
